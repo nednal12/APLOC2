@@ -18,4 +18,6 @@
 
 -(NSString*)showChild;
 
+@property int intChild;
+
 @end

@@ -9,6 +9,7 @@
 #import "Child.h"
 
 @implementation Child
+@synthesize intChild;
 
 -(id)init
 {
@@ -26,7 +27,11 @@
 
 -(NSString*)showChild
 {
-    NSString* returnThis = [[NSString alloc] initWithFormat:@"intChild = %d, fltChild = %f, blnChild = %c", intChild, fltChild, blnChild];
+    NSString* returnThis = [[NSString alloc] initWithFormat:@"intChild = %d, fltChild = %1.2f, blnChild = %c", intChild, fltChild, blnChild];
+
+    
+ /*   NSString* returnThis = [[NSString alloc] initWithFormat:@"blnChild = %c", blnChild];
+ */ 
     
     return returnThis;
     
