@@ -9,5 +9,13 @@
 #import <Foundation/Foundation.h>
 
 @interface Child : NSObject
+{
+    int intChild;
+    float fltChild;
+    BOOL blnChild;
+    
+}
+
+-(NSString*)showChild;
 
 @end

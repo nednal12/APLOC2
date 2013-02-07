@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+@class Child;
 
 @interface ViewController : UIViewController
-
+{
+    UILabel *firstLabel;
+}
 @end

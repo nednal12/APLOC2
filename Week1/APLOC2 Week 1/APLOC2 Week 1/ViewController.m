@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "Child.h"
 
 @interface ViewController ()
 
@@ -18,6 +19,18 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    firstLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 320, 50)];
+    
+    Child *firstChild = [[Child alloc] init];
+    if (firstChild != nil)
+    {
+        firstLabel.text = firstChild.showChild;
+
+    }
+    
+    [self.view addSubview:firstLabel];
+    
 }
 
 - (void)didReceiveMemoryWarning
