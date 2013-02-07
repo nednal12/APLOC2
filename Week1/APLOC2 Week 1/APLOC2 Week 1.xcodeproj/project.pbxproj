@@ -19,6 +19,7 @@
 		65DF922F16C3B0810035C5C9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DF922E16C3B0810035C5C9 /* ViewController.m */; };
 		65DF923216C3B0810035C5C9 /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65DF923016C3B0810035C5C9 /* ViewController_iPhone.xib */; };
 		65DF923516C3B0810035C5C9 /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65DF923316C3B0810035C5C9 /* ViewController_iPad.xib */; };
+		65DF923D16C3B2CB0035C5C9 /* Child.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DF923C16C3B2CB0035C5C9 /* Child.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,8 @@
 		65DF922E16C3B0810035C5C9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		65DF923116C3B0810035C5C9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
 		65DF923416C3B0810035C5C9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
+		65DF923B16C3B2CB0035C5C9 /* Child.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Child.h; sourceTree = "<group>"; };
+		65DF923C16C3B2CB0035C5C9 /* Child.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Child.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +95,8 @@
 				65DF923016C3B0810035C5C9 /* ViewController_iPhone.xib */,
 				65DF923316C3B0810035C5C9 /* ViewController_iPad.xib */,
 				65DF921C16C3B0810035C5C9 /* Supporting Files */,
+				65DF923B16C3B2CB0035C5C9 /* Child.h */,
+				65DF923C16C3B2CB0035C5C9 /* Child.m */,
 			);
 			path = "APLOC2 Week 1";
 			sourceTree = "<group>";
@@ -180,6 +185,7 @@
 				65DF922216C3B0810035C5C9 /* main.m in Sources */,
 				65DF922616C3B0810035C5C9 /* AppDelegate.m in Sources */,
 				65DF922F16C3B0810035C5C9 /* ViewController.m in Sources */,
+				65DF923D16C3B2CB0035C5C9 /* Child.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
