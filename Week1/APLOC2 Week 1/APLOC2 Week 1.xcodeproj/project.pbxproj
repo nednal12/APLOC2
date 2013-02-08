@@ -20,6 +20,9 @@
 		65DF923216C3B0810035C5C9 /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65DF923016C3B0810035C5C9 /* ViewController_iPhone.xib */; };
 		65DF923516C3B0810035C5C9 /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65DF923316C3B0810035C5C9 /* ViewController_iPad.xib */; };
 		65DF923D16C3B2CB0035C5C9 /* Child.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DF923C16C3B2CB0035C5C9 /* Child.m */; };
+		65DF924016C479840035C5C9 /* ChildFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DF923F16C479840035C5C9 /* ChildFactory.m */; };
+		65DF924316C49D240035C5C9 /* GoodChild.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DF924216C49D240035C5C9 /* GoodChild.m */; };
+		65DF924916C4A89C0035C5C9 /* BadChild.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DF924816C4A89C0035C5C9 /* BadChild.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +45,12 @@
 		65DF923416C3B0810035C5C9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
 		65DF923B16C3B2CB0035C5C9 /* Child.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Child.h; sourceTree = "<group>"; };
 		65DF923C16C3B2CB0035C5C9 /* Child.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Child.m; sourceTree = "<group>"; };
+		65DF923E16C479840035C5C9 /* ChildFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChildFactory.h; sourceTree = "<group>"; };
+		65DF923F16C479840035C5C9 /* ChildFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChildFactory.m; sourceTree = "<group>"; };
+		65DF924116C49D240035C5C9 /* GoodChild.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoodChild.h; sourceTree = "<group>"; };
+		65DF924216C49D240035C5C9 /* GoodChild.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoodChild.m; sourceTree = "<group>"; };
+		65DF924716C4A89C0035C5C9 /* BadChild.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BadChild.h; sourceTree = "<group>"; };
+		65DF924816C4A89C0035C5C9 /* BadChild.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BadChild.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +106,12 @@
 				65DF921C16C3B0810035C5C9 /* Supporting Files */,
 				65DF923B16C3B2CB0035C5C9 /* Child.h */,
 				65DF923C16C3B2CB0035C5C9 /* Child.m */,
+				65DF923E16C479840035C5C9 /* ChildFactory.h */,
+				65DF923F16C479840035C5C9 /* ChildFactory.m */,
+				65DF924116C49D240035C5C9 /* GoodChild.h */,
+				65DF924216C49D240035C5C9 /* GoodChild.m */,
+				65DF924716C4A89C0035C5C9 /* BadChild.h */,
+				65DF924816C4A89C0035C5C9 /* BadChild.m */,
 			);
 			path = "APLOC2 Week 1";
 			sourceTree = "<group>";
@@ -186,6 +201,9 @@
 				65DF922616C3B0810035C5C9 /* AppDelegate.m in Sources */,
 				65DF922F16C3B0810035C5C9 /* ViewController.m in Sources */,
 				65DF923D16C3B2CB0035C5C9 /* Child.m in Sources */,
+				65DF924016C479840035C5C9 /* ChildFactory.m in Sources */,
+				65DF924316C49D240035C5C9 /* GoodChild.m in Sources */,
+				65DF924916C4A89C0035C5C9 /* BadChild.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

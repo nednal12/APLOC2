@@ -12,5 +12,10 @@
 @interface ViewController : UIViewController
 {
     UILabel *firstLabel;
+    UILabel *secondLabel;
+    UILabel *thirdLabel;
+    UILabel *fourthLabel;
+    UILabel *fifthLabel;
+    UILabel *sixthLabel;
 }
 @end

@@ -8,13 +8,26 @@
 
 #import <Foundation/Foundation.h>
 
+typedef enum
+{
+    CHILDTYPE_GOOD=0,
+    CHILDTYPE_BAD,
+    CHILDTYPE_PERFECT,
+    CHILDTYPE_ROTTEN
+    
+} EChildType;
+
 @interface Child : NSObject
 {
+@protected
+    NSString *strName;
     int intChild;
-    float fltChild;
-    BOOL blnChild;
-    
+    EChildType childType;
 }
+
+-(id)initWithDetails:(int)inpIntChild inpStrName:(NSString*)inpStrName;
+
+-(void)showName;
 
 -(NSString*)showChild;
 

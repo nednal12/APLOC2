@@ -11,23 +11,30 @@
 @implementation Child
 @synthesize intChild;
 
--(id)init
+-(id)initWithDetails:(int)inpIntChild inpStrName:(NSString*)inpStrName
 {
     self = [super init];
     if (self != nil)
     {
-        intChild = 1;
-        fltChild = 150.69;
-        blnChild = TRUE;
+        strName = inpStrName;
+        intChild = inpIntChild ;
+
     }
     
     return self;
 }
 
+-(void)showName
+{
+    NSLog(@"My name is %@", strName);
+}
+
+
+
 
 -(NSString*)showChild
 {
-    NSString* returnThis = [[NSString alloc] initWithFormat:@"intChild = %d, fltChild = %1.2f, blnChild = %c", intChild, fltChild, blnChild];
+    NSString* returnThis = [[NSString alloc] initWithFormat:@"intChild = %d", intChild];
 
     
  /*   NSString* returnThis = [[NSString alloc] initWithFormat:@"blnChild = %c", blnChild];
