@@ -23,6 +23,7 @@
 		65DF924016C479840035C5C9 /* ChildFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DF923F16C479840035C5C9 /* ChildFactory.m */; };
 		65DF924316C49D240035C5C9 /* GoodChild.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DF924216C49D240035C5C9 /* GoodChild.m */; };
 		65DF924916C4A89C0035C5C9 /* BadChild.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DF924816C4A89C0035C5C9 /* BadChild.m */; };
+		65DF924C16C4AE670035C5C9 /* RottenChild.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DF924B16C4AE670035C5C9 /* RottenChild.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,8 @@
 		65DF924216C49D240035C5C9 /* GoodChild.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoodChild.m; sourceTree = "<group>"; };
 		65DF924716C4A89C0035C5C9 /* BadChild.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BadChild.h; sourceTree = "<group>"; };
 		65DF924816C4A89C0035C5C9 /* BadChild.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BadChild.m; sourceTree = "<group>"; };
+		65DF924A16C4AE670035C5C9 /* RottenChild.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RottenChild.h; sourceTree = "<group>"; };
+		65DF924B16C4AE670035C5C9 /* RottenChild.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RottenChild.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +115,8 @@
 				65DF924216C49D240035C5C9 /* GoodChild.m */,
 				65DF924716C4A89C0035C5C9 /* BadChild.h */,
 				65DF924816C4A89C0035C5C9 /* BadChild.m */,
+				65DF924A16C4AE670035C5C9 /* RottenChild.h */,
+				65DF924B16C4AE670035C5C9 /* RottenChild.m */,
 			);
 			path = "APLOC2 Week 1";
 			sourceTree = "<group>";
@@ -204,6 +209,7 @@
 				65DF924016C479840035C5C9 /* ChildFactory.m in Sources */,
 				65DF924316C49D240035C5C9 /* GoodChild.m in Sources */,
 				65DF924916C4A89C0035C5C9 /* BadChild.m in Sources */,
+				65DF924C16C4AE670035C5C9 /* RottenChild.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,20 +1,19 @@
 //
-//  GoodChild.m
+//  RottenChild.m
 //  APLOC2 Week 1
 //
 //  Created by Brent Marohnic on 2/7/13.
 //  Copyright (c) 2013 Brent Marohnic. All rights reserved.
 //
 
-#import "GoodChild.h"
+#import "RottenChild.h"
 #import "Child.h"
 
-@implementation GoodChild
+@implementation RottenChild
 
 -(void)setAttributes
 {
-    intChild = 0;
-    strName = @"Jack";
-    childType = CHILDTYPE_GOOD;
+    intChild = 3;
+    strName = @"Brent";
 }
 @end

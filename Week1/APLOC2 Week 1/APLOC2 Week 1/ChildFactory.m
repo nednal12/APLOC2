@@ -21,6 +21,11 @@
     {
         return [[Child alloc] initWithDetails:1 inpStrName:@"Connor"];
     }
+    else if (childType == 3)
+    {
+        return [[Child alloc] initWithDetails:3 inpStrName:@"Brent"];
+    }
+
     return nil;
     
 }

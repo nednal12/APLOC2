@@ -19,7 +19,7 @@ typedef enum
 
 @interface Child : NSObject
 {
-@protected
+@public
     NSString *strName;
     int intChild;
     EChildType childType;

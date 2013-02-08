@@ -27,6 +27,7 @@
 -(void)showName
 {
     NSLog(@"My name is %@", strName);
+    
 }
 
 
@@ -34,7 +35,7 @@
 
 -(NSString*)showChild
 {
-    NSString* returnThis = [[NSString alloc] initWithFormat:@"intChild = %d", intChild];
+    NSString* returnThis = [[NSString alloc] initWithFormat:@"My name is = %@", strName];
 
     
  /*   NSString* returnThis = [[NSString alloc] initWithFormat:@"blnChild = %c", blnChild];

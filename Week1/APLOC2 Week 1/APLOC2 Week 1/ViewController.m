@@ -10,6 +10,8 @@
 #import "Child.h"
 #import "ChildFactory.h"
 #import "GoodChild.h"
+#import "BadChild.h"
+#import "RottenChild.h"
 
 @interface ViewController ()
 
@@ -28,6 +30,8 @@
         [Jack showName];
     }
     
+    
+    //Instantiate instances of the subclasses and set their attributes
     GoodChild *goodChild = [[GoodChild alloc] init];
     {
         if (goodChild != nil)
@@ -36,8 +40,29 @@
         }
     }
     
+    BadChild *badChild = [[BadChild alloc] init];
+    {
+        if (badChild != nil)
+        {
+            [badChild setAttributes];
+        }
+    }
+    
+    RottenChild *rottenChild = [[RottenChild alloc] init];
+    {
+        if (rottenChild != nil)
+        {
+            [rottenChild setAttributes];
+        }
+    }
+
+    
+    
+    
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    //Setup the labels that will hold the static and dynamic values
     
     firstLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 320, 50)];
     secondLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 51, 320, 50)];
@@ -58,8 +83,14 @@
     }
     
     firstLabel.text = @"Good Child";
+    secondLabel.text = goodChild->strName;
     thirdLabel.text = @"Bad Child";
+    fourthLabel.text = badChild->strName;
     fifthLabel.text = @"Rotten Child";
+    sixthLabel.text = rottenChild->strName;
+    
+    
+    //Show the labels
     
     [self.view addSubview:firstLabel];
     [self.view addSubview:secondLabel];
