@@ -7,11 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "Child.h"
-#import "ChildFactory.h"
-#import "GoodChild.h"
-#import "BadChild.h"
-#import "RottenChild.h"
+
 
 @interface ViewController ()
 
@@ -21,43 +17,22 @@
 
 - (void)viewDidLoad
 {
+    // create a cricket 
+    cricketInsect *myNewCricket = (cricketInsect*)[insectFactory createNewInsect:CRICKET];
+    [myNewCricket setSleepDerprivationLevel:5];
     
-    ChildFactory *childFactory = [[ChildFactory alloc] init];
-    if (childFactory != nil)
-    {
-        Child *Jack = [childFactory GetChild:0];
-        
-        [Jack showName];
-    }
+    [myNewCricket calculateAnnoyanceFactor];
     
+    // create a butterfly
+    butterflyInsect *myNewButterfly = (butterflyInsect*)[insectFactory createNewInsect:BUTTERFLY];
     
-    //Instantiate instances of the subclasses and set their attributes
-    GoodChild *goodChild = [[GoodChild alloc] init];
-    {
-        if (goodChild != nil)
-        {
-            [goodChild setAttributes];
-        }
-    }
+    [myNewButterfly calculateAnnoyanceFactor];
     
-    BadChild *badChild = [[BadChild alloc] init];
-    {
-        if (badChild != nil)
-        {
-            [badChild setAttributes];
-        }
-    }
+    // create a ant
+    antInsect *myNewAnt = (antInsect*)[insectFactory createNewInsect:ANT];
+    [myNewAnt setTypeOfAnt:RED];
     
-    RottenChild *rottenChild = [[RottenChild alloc] init];
-    {
-        if (rottenChild != nil)
-        {
-            [rottenChild setAttributes];
-        }
-    }
-
-    
-    
+    [myNewAnt calculateAnnoyanceFactor];
     
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
@@ -67,27 +42,21 @@
     firstLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 320, 50)];
     secondLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 51, 320, 50)];
     
-    thirdLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 120, 320, 50)];
-    fourthLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 171, 320, 50)];
+    thirdLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 170, 320, 50)];
+    fourthLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 221, 320, 50)];
     
-    fifthLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 240, 320, 50)];
-    sixthLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 291, 320, 50)];
+    fifthLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 340, 320, 50)];
+    sixthLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 391, 320, 50)];
     
-    Child *firstChild = [[Child alloc] init];
-    if (firstChild != nil)
-    {
-        firstChild.intChild = 2;
-        
-        secondLabel.text = firstChild.showChild;
-
-    }
     
-    firstLabel.text = @"Good Child";
-    secondLabel.text = goodChild->strName;
-    thirdLabel.text = @"Bad Child";
-    fourthLabel.text = badChild->strName;
-    fifthLabel.text = @"Rotten Child";
-    sixthLabel.text = rottenChild->strName;
+    firstLabel.text = [NSString stringWithFormat:@"A %@ has been created.", [myNewCricket insectName]];
+    secondLabel.numberOfLines = 2;
+    secondLabel.text = [NSString stringWithFormat:@"Its annoyance factor is %d when my sleep deprivation is %d", [myNewCricket annoyanceFactor], [myNewCricket sleepDerprivationLevel]];
+    thirdLabel.text = [NSString stringWithFormat:@"A %@ has been created.", [myNewButterfly insectName]];
+    fourthLabel.text = [NSString stringWithFormat:@"Its annoyance factor is %d simply because I like butterflies.", [myNewButterfly annoyanceFactor]];
+    fourthLabel.numberOfLines = 2;
+    fifthLabel.text = [NSString stringWithFormat:@"A %@ has been created.", [myNewAnt insectName]];
+    sixthLabel.text = [NSString stringWithFormat:@"Its annoyance factor is %d", [myNewAnt annoyanceFactor]];
     
     
     //Show the labels

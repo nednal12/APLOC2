@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-@class Child;
+#import "insectFactory.h"
 
 @interface ViewController : UIViewController
 {

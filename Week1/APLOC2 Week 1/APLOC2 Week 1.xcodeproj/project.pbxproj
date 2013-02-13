@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		658F737B16C9C10400092386 /* insectFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 658F737A16C9C10400092386 /* insectFactory.m */; };
+		658F737E16C9C12D00092386 /* baseInsect.m in Sources */ = {isa = PBXBuildFile; fileRef = 658F737D16C9C12D00092386 /* baseInsect.m */; };
+		658F738116C9C18500092386 /* cricketInsect.m in Sources */ = {isa = PBXBuildFile; fileRef = 658F738016C9C18500092386 /* cricketInsect.m */; };
+		658F738416C9C19F00092386 /* butterflyInsect.m in Sources */ = {isa = PBXBuildFile; fileRef = 658F738316C9C19F00092386 /* butterflyInsect.m */; };
+		658F738716C9C1AF00092386 /* antInsect.m in Sources */ = {isa = PBXBuildFile; fileRef = 658F738616C9C1AF00092386 /* antInsect.m */; };
 		65DF921616C3B0810035C5C9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65DF921516C3B0810035C5C9 /* UIKit.framework */; };
 		65DF921816C3B0810035C5C9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65DF921716C3B0810035C5C9 /* Foundation.framework */; };
 		65DF921A16C3B0810035C5C9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65DF921916C3B0810035C5C9 /* CoreGraphics.framework */; };
@@ -19,14 +24,19 @@
 		65DF922F16C3B0810035C5C9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DF922E16C3B0810035C5C9 /* ViewController.m */; };
 		65DF923216C3B0810035C5C9 /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65DF923016C3B0810035C5C9 /* ViewController_iPhone.xib */; };
 		65DF923516C3B0810035C5C9 /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65DF923316C3B0810035C5C9 /* ViewController_iPad.xib */; };
-		65DF923D16C3B2CB0035C5C9 /* Child.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DF923C16C3B2CB0035C5C9 /* Child.m */; };
-		65DF924016C479840035C5C9 /* ChildFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DF923F16C479840035C5C9 /* ChildFactory.m */; };
-		65DF924316C49D240035C5C9 /* GoodChild.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DF924216C49D240035C5C9 /* GoodChild.m */; };
-		65DF924916C4A89C0035C5C9 /* BadChild.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DF924816C4A89C0035C5C9 /* BadChild.m */; };
-		65DF924C16C4AE670035C5C9 /* RottenChild.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DF924B16C4AE670035C5C9 /* RottenChild.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		658F737916C9C10400092386 /* insectFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = insectFactory.h; sourceTree = "<group>"; };
+		658F737A16C9C10400092386 /* insectFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = insectFactory.m; sourceTree = "<group>"; };
+		658F737C16C9C12D00092386 /* baseInsect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = baseInsect.h; sourceTree = "<group>"; };
+		658F737D16C9C12D00092386 /* baseInsect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = baseInsect.m; sourceTree = "<group>"; };
+		658F737F16C9C18500092386 /* cricketInsect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cricketInsect.h; sourceTree = "<group>"; };
+		658F738016C9C18500092386 /* cricketInsect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cricketInsect.m; sourceTree = "<group>"; };
+		658F738216C9C19F00092386 /* butterflyInsect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = butterflyInsect.h; sourceTree = "<group>"; };
+		658F738316C9C19F00092386 /* butterflyInsect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = butterflyInsect.m; sourceTree = "<group>"; };
+		658F738516C9C1AF00092386 /* antInsect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = antInsect.h; sourceTree = "<group>"; };
+		658F738616C9C1AF00092386 /* antInsect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = antInsect.m; sourceTree = "<group>"; };
 		65DF921216C3B0810035C5C9 /* APLOC2 Week 1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "APLOC2 Week 1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		65DF921516C3B0810035C5C9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		65DF921716C3B0810035C5C9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -44,16 +54,6 @@
 		65DF922E16C3B0810035C5C9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		65DF923116C3B0810035C5C9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
 		65DF923416C3B0810035C5C9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
-		65DF923B16C3B2CB0035C5C9 /* Child.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Child.h; sourceTree = "<group>"; };
-		65DF923C16C3B2CB0035C5C9 /* Child.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Child.m; sourceTree = "<group>"; };
-		65DF923E16C479840035C5C9 /* ChildFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChildFactory.h; sourceTree = "<group>"; };
-		65DF923F16C479840035C5C9 /* ChildFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChildFactory.m; sourceTree = "<group>"; };
-		65DF924116C49D240035C5C9 /* GoodChild.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoodChild.h; sourceTree = "<group>"; };
-		65DF924216C49D240035C5C9 /* GoodChild.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoodChild.m; sourceTree = "<group>"; };
-		65DF924716C4A89C0035C5C9 /* BadChild.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BadChild.h; sourceTree = "<group>"; };
-		65DF924816C4A89C0035C5C9 /* BadChild.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BadChild.m; sourceTree = "<group>"; };
-		65DF924A16C4AE670035C5C9 /* RottenChild.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RottenChild.h; sourceTree = "<group>"; };
-		65DF924B16C4AE670035C5C9 /* RottenChild.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RottenChild.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,16 +107,16 @@
 				65DF923016C3B0810035C5C9 /* ViewController_iPhone.xib */,
 				65DF923316C3B0810035C5C9 /* ViewController_iPad.xib */,
 				65DF921C16C3B0810035C5C9 /* Supporting Files */,
-				65DF923B16C3B2CB0035C5C9 /* Child.h */,
-				65DF923C16C3B2CB0035C5C9 /* Child.m */,
-				65DF923E16C479840035C5C9 /* ChildFactory.h */,
-				65DF923F16C479840035C5C9 /* ChildFactory.m */,
-				65DF924116C49D240035C5C9 /* GoodChild.h */,
-				65DF924216C49D240035C5C9 /* GoodChild.m */,
-				65DF924716C4A89C0035C5C9 /* BadChild.h */,
-				65DF924816C4A89C0035C5C9 /* BadChild.m */,
-				65DF924A16C4AE670035C5C9 /* RottenChild.h */,
-				65DF924B16C4AE670035C5C9 /* RottenChild.m */,
+				658F737916C9C10400092386 /* insectFactory.h */,
+				658F737A16C9C10400092386 /* insectFactory.m */,
+				658F737C16C9C12D00092386 /* baseInsect.h */,
+				658F737D16C9C12D00092386 /* baseInsect.m */,
+				658F737F16C9C18500092386 /* cricketInsect.h */,
+				658F738016C9C18500092386 /* cricketInsect.m */,
+				658F738216C9C19F00092386 /* butterflyInsect.h */,
+				658F738316C9C19F00092386 /* butterflyInsect.m */,
+				658F738516C9C1AF00092386 /* antInsect.h */,
+				658F738616C9C1AF00092386 /* antInsect.m */,
 			);
 			path = "APLOC2 Week 1";
 			sourceTree = "<group>";
@@ -205,11 +205,11 @@
 				65DF922216C3B0810035C5C9 /* main.m in Sources */,
 				65DF922616C3B0810035C5C9 /* AppDelegate.m in Sources */,
 				65DF922F16C3B0810035C5C9 /* ViewController.m in Sources */,
-				65DF923D16C3B2CB0035C5C9 /* Child.m in Sources */,
-				65DF924016C479840035C5C9 /* ChildFactory.m in Sources */,
-				65DF924316C49D240035C5C9 /* GoodChild.m in Sources */,
-				65DF924916C4A89C0035C5C9 /* BadChild.m in Sources */,
-				65DF924C16C4AE670035C5C9 /* RottenChild.m in Sources */,
+				658F737B16C9C10400092386 /* insectFactory.m in Sources */,
+				658F737E16C9C12D00092386 /* baseInsect.m in Sources */,
+				658F738116C9C18500092386 /* cricketInsect.m in Sources */,
+				658F738416C9C19F00092386 /* butterflyInsect.m in Sources */,
+				658F738716C9C1AF00092386 /* antInsect.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,6 +342,7 @@
 				65DF923A16C3B0810035C5C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
