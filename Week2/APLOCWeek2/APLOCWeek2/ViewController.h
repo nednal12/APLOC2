@@ -11,11 +11,20 @@
 @interface ViewController : UIViewController
 {
     IBOutlet UISegmentedControl *segmentControl;
-    UIViewController *viewController;
+    IBOutlet UIStepper *stepperControl;
+    IBOutlet UIButton *cricketButton;
+    IBOutlet UIButton *butterflyButton;
+    IBOutlet UIButton *antButton;
+    IBOutlet UIButton *executeButton;
+    IBOutlet UITextField *textBox;
 }
 
 -(IBAction)onChange:(id)sender;
 
 -(IBAction)onClick:(id)sender;
+
+-(IBAction)onStepChange:(id)sender;
+
+-(IBAction)onClassButtonClick:(id)sender;
 
 @end
