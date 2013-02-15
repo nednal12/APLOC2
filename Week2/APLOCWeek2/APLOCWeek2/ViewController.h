@@ -7,15 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "eventFactory.h"
 
 @interface ViewController : UIViewController
 {
     IBOutlet UISegmentedControl *segmentControl;
     IBOutlet UIStepper *stepperControl;
-    IBOutlet UIButton *cricketButton;
-    IBOutlet UIButton *butterflyButton;
-    IBOutlet UIButton *antButton;
-    IBOutlet UIButton *executeButton;
+    IBOutlet UIButton *swimButton;
+    IBOutlet UIButton *bikeButton;
+    IBOutlet UIButton *runButton;
+    IBOutlet UIButton *competeButton;
     IBOutlet UITextField *textBox;
 }
 
@@ -26,5 +27,7 @@
 -(IBAction)onStepChange:(id)sender;
 
 -(IBAction)onClassButtonClick:(id)sender;
+
+-(IBAction)onCompeteClick:(id)sender;
 
 @end

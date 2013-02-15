@@ -15,35 +15,47 @@
 
 @implementation ViewController
 
+-(IBAction)onCompeteClick:(id)sender
+{
+    swimEvent *newSwimEvent = (swimEvent*)[eventFactory createNewEvent:SWIM];
+    [newSwimEvent setWaterTemp: 70];
+    
+    textBox.text = [NSString stringWithFormat:@"Event Time of %.2f Minutes", [newSwimEvent calculateEventTime]];
+}
+
+
 -(IBAction)onClassButtonClick:(id)sender
 {
     UIButton *classButton = (UIButton*)sender;
     if (classButton.tag == 0)
     {
-        textBox.text = @"Cricket";
+        textBox.text = @"Swim 1 mile";
         stepperControl.enabled = TRUE;
+        stepperControl.maximumValue = 3;
         classButton.enabled = FALSE;
-        antButton.enabled = TRUE;
-        butterflyButton.enabled = TRUE;
+        runButton.enabled = TRUE;
+        bikeButton.enabled = TRUE;
         stepperControl.value = 0;
     }
     else if (classButton.tag == 1)
     {
-        textBox.text = @"Butterfly";
+        textBox.text = @"Bike 1 mile";
         stepperControl.enabled = TRUE;
+        stepperControl.maximumValue = 120;
         classButton.enabled = FALSE;
-        antButton.enabled = TRUE;
-        cricketButton.enabled = TRUE;
+        runButton.enabled = TRUE;
+        swimButton.enabled = TRUE;
         stepperControl.value = 0;
         
     }
     else if (classButton.tag == 2)
     {
-        textBox.text = @"Ant";
+        textBox.text = @"Run 1 mile";
         stepperControl.enabled = TRUE;
+        stepperControl.maximumValue = 26;
         classButton.enabled = FALSE;
-        cricketButton.enabled = TRUE;
-        butterflyButton.enabled = TRUE;
+        swimButton.enabled = TRUE;
+        bikeButton.enabled = TRUE;
         stepperControl.value = 0;
         
     }
@@ -58,28 +70,28 @@
         
         if (currentValue == 1)
         {
-            if (cricketButton.enabled == FALSE)
+            if (swimButton.enabled == FALSE)
             {
-                textBox.text = @"Cricket";
+                textBox.text = @"Swim 1 mile";
             }
-            else if (butterflyButton.enabled == FALSE)
+            else if (bikeButton.enabled == FALSE)
             {
-                textBox.text = @"Butterfly";
+                textBox.text = @"Bike 1 mile";
             }
-            else textBox.text = @"Ant";
+            else textBox.text = @"Run 1 mile";
         }
         
         else
         {
-            if (cricketButton.enabled == FALSE)
+            if (swimButton.enabled == FALSE)
             {
-                textBox.text = [NSString stringWithFormat:@"%d Crickets", currentValue];
+                textBox.text = [NSString stringWithFormat:@"Swim %d miles", currentValue];
             }
-            else if (butterflyButton.enabled == FALSE)
+            else if (bikeButton.enabled == FALSE)
             {
-                textBox.text = [NSString stringWithFormat:@"%d Butterflies", currentValue];
+                textBox.text = [NSString stringWithFormat:@"Bike %d miles", currentValue];
             }
-            else textBox.text = [NSString stringWithFormat:@"%d Ants", currentValue];
+            else textBox.text = [NSString stringWithFormat:@"Run %d miles", currentValue];
         }
         
     }

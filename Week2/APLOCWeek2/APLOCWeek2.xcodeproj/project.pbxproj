@@ -21,6 +21,11 @@
 		65D407D016CD2D6F00FAE85B /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65D407CE16CD2D6F00FAE85B /* ViewController_iPad.xib */; };
 		65D407D716CD4EF900FAE85B /* ViewController2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65D407D616CD4EF900FAE85B /* ViewController2.xib */; };
 		65D407DA16CD572700FAE85B /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D407D916CD572700FAE85B /* ViewController2.m */; };
+		65D407DD16CDC19E00FAE85B /* baseEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D407DC16CDC19E00FAE85B /* baseEvent.m */; };
+		65D407E016CDC5F400FAE85B /* swimEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D407DF16CDC5F400FAE85B /* swimEvent.m */; };
+		65D407E316CDD16C00FAE85B /* bikeEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D407E216CDD16B00FAE85B /* bikeEvent.m */; };
+		65D407E616CDD3CE00FAE85B /* runEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D407E516CDD3CE00FAE85B /* runEvent.m */; };
+		65D407E916CDDA4300FAE85B /* eventFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D407E816CDDA4300FAE85B /* eventFactory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +49,16 @@
 		65D407D616CD4EF900FAE85B /* ViewController2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController2.xib; sourceTree = "<group>"; };
 		65D407D816CD572700FAE85B /* ViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController2.h; sourceTree = "<group>"; };
 		65D407D916CD572700FAE85B /* ViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController2.m; sourceTree = "<group>"; };
+		65D407DB16CDC19E00FAE85B /* baseEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = baseEvent.h; sourceTree = "<group>"; };
+		65D407DC16CDC19E00FAE85B /* baseEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = baseEvent.m; sourceTree = "<group>"; };
+		65D407DE16CDC5F400FAE85B /* swimEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = swimEvent.h; sourceTree = "<group>"; };
+		65D407DF16CDC5F400FAE85B /* swimEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = swimEvent.m; sourceTree = "<group>"; };
+		65D407E116CDD16B00FAE85B /* bikeEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bikeEvent.h; sourceTree = "<group>"; };
+		65D407E216CDD16B00FAE85B /* bikeEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = bikeEvent.m; sourceTree = "<group>"; };
+		65D407E416CDD3CE00FAE85B /* runEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = runEvent.h; sourceTree = "<group>"; };
+		65D407E516CDD3CE00FAE85B /* runEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = runEvent.m; sourceTree = "<group>"; };
+		65D407E716CDDA4300FAE85B /* eventFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = eventFactory.h; sourceTree = "<group>"; };
+		65D407E816CDDA4300FAE85B /* eventFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = eventFactory.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +115,16 @@
 				65D407D616CD4EF900FAE85B /* ViewController2.xib */,
 				65D407D816CD572700FAE85B /* ViewController2.h */,
 				65D407D916CD572700FAE85B /* ViewController2.m */,
+				65D407DB16CDC19E00FAE85B /* baseEvent.h */,
+				65D407DC16CDC19E00FAE85B /* baseEvent.m */,
+				65D407DE16CDC5F400FAE85B /* swimEvent.h */,
+				65D407DF16CDC5F400FAE85B /* swimEvent.m */,
+				65D407E116CDD16B00FAE85B /* bikeEvent.h */,
+				65D407E216CDD16B00FAE85B /* bikeEvent.m */,
+				65D407E416CDD3CE00FAE85B /* runEvent.h */,
+				65D407E516CDD3CE00FAE85B /* runEvent.m */,
+				65D407E716CDDA4300FAE85B /* eventFactory.h */,
+				65D407E816CDDA4300FAE85B /* eventFactory.m */,
 			);
 			path = APLOCWeek2;
 			sourceTree = "<group>";
@@ -190,6 +215,11 @@
 				65D407C116CD2D6F00FAE85B /* AppDelegate.m in Sources */,
 				65D407CA16CD2D6F00FAE85B /* ViewController.m in Sources */,
 				65D407DA16CD572700FAE85B /* ViewController2.m in Sources */,
+				65D407DD16CDC19E00FAE85B /* baseEvent.m in Sources */,
+				65D407E016CDC5F400FAE85B /* swimEvent.m in Sources */,
+				65D407E316CDD16C00FAE85B /* bikeEvent.m in Sources */,
+				65D407E616CDD3CE00FAE85B /* runEvent.m in Sources */,
+				65D407E916CDDA4300FAE85B /* eventFactory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
