@@ -21,7 +21,7 @@
     {
         [self setElevationInFeet:5500];
         [self setEventDistance:120];
-        [self setEventName:@"Biking"];
+        [self setEventName:@"Cycling"];
     }
     return self;
 }

@@ -15,6 +15,12 @@
 
 @implementation ViewController
 
+// This event is trigged by the Compete button.
+// Begin by identifying which subclass is currently being generated.
+// This is accomplished by cycling thru the subclass buttons' enabled property since the last one pressed will now be disabled.
+// The Compete button and stepper control remain disabled until one of the subclass buttons is pressed.
+// The subclass button corresponding to the class that was just generated is enabled so that it can be used again.
+
 -(IBAction)onCompeteClick:(id)sender
 {
     
@@ -24,10 +30,10 @@
         [newSwimEvent setWaterTemp: 70];
         [newSwimEvent setEventDistance:stepperControl.value];
         
-        textBox.text = [NSString stringWithFormat:@"Event Time ~ %.4f Minutes", [newSwimEvent calculateEventTime]];
+        textBox.text = [NSString stringWithFormat:@"%@ ~ %.4f Minutes", [newSwimEvent eventName], [newSwimEvent calculateEventTime]];
         
         swimButton.enabled = TRUE;
-        stepperControl.enabled = FALSE;
+        
     }
     else if (bikeButton.enabled == FALSE)
     {
@@ -36,10 +42,10 @@
         [newBikeEvent setEventDistance:stepperControl.value];
         
         
-        textBox.text = [NSString stringWithFormat:@"Event Time ~ %.4f Minutes", [newBikeEvent calculateEventTime]];
+        textBox.text = [NSString stringWithFormat:@"%@ ~ %.4f Minutes", [newBikeEvent eventName], [newBikeEvent calculateEventTime]];
         
         bikeButton.enabled = TRUE;
-        stepperControl.enabled = FALSE;
+        
     }
     else
     {
@@ -48,20 +54,29 @@
         [newRunEvent setEventDistance:stepperControl.value];
         
         
-        textBox.text = [NSString stringWithFormat:@"Event Time ~ %.4f Minutes", [newRunEvent calculateEventTime]];
+        textBox.text = [NSString stringWithFormat:@"%@ ~ %.4f Minutes", [newRunEvent eventName], [newRunEvent calculateEventTime]];
         
         runButton.enabled = TRUE;
-        stepperControl.enabled = FALSE;
+        
     }
     
     competeButton.enabled = FALSE;
+    stepperControl.enabled = FALSE;
 }
 
+
+// This event will be called by all three subclass buttons.
+// Identify which button called the event by using the sender's tag identifier.
+// Populate the text box with the initial 1 mile text.
+// Enable the stepper control and set the max value for the stepper depending on which event has been selected and set the value to zero.
+// Enable the other two subclass buttons in case the user changes his/her mind.
+// Disable the subclass button that initiated the event.
+// Enable the Compete button so that the user can perform the calculation.
 
 -(IBAction)onClassButtonClick:(id)sender
 {
     UIButton *classButton = (UIButton*)sender;
-    if (classButton.tag == 0)
+    if ([sender tag] == 0)
     {
         textBox.text = @"Swim 1 mile";
         stepperControl.enabled = TRUE;
@@ -72,7 +87,7 @@
         stepperControl.value = 0;
         competeButton.enabled = TRUE;
     }
-    else if (classButton.tag == 1)
+    else if ([sender tag] == 1)
     {
         textBox.text = @"Bike 1 mile";
         stepperControl.enabled = TRUE;
@@ -84,7 +99,7 @@
         competeButton.enabled = TRUE;
         
     }
-    else if (classButton.tag == 2)
+    else if ([sender tag] == 2)
     {
         textBox.text = @"Run 1 mile";
         stepperControl.enabled = TRUE;
@@ -97,6 +112,11 @@
         
     }
 }
+
+
+// This event will be called by the stepper control.
+// Separate out the value of one logic from the remaining logic in order to get the sentence in the text box grammatically accurate.
+// Use the current value of the stepper to increment the value displayed in the text box message.
 
 -(IBAction)onStepChange:(id)sender
 {
@@ -134,6 +154,9 @@
     }
 }
 
+
+// This event is used to display the second view.
+
 -(IBAction)onClick:(id)sender
 {
     ViewController2 *secondView = [[ViewController2 alloc] initWithNibName:@"ViewController2" bundle:nil];
@@ -144,6 +167,8 @@
     }
 }
 
+
+// This event is used to change the background color of the primary view.
 -(IBAction)onChange:(id)sender
 {
     UISegmentedControl *segControl = (UISegmentedControl*)sender;

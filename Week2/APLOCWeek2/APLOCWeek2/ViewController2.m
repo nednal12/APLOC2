@@ -23,10 +23,15 @@
     return self;
 }
 
+
+// This event will simply close the secondary view so that the primary view will once again appear.
+
 -(IBAction)onClose:(id)sender
 {
     [self dismissViewControllerAnimated:TRUE completion:nil];
 }
+
+
 
 - (void)viewDidLoad
 {
