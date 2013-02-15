@@ -35,7 +35,7 @@
     float handicap;
     float distanceHandicap;
     
-    handicap = abs(25 - elevationInFeet) * 0.01 * abs(25 - elevationInFeet);
+    handicap = abs(25 - elevationInFeet) * 0.001;
     distanceHandicap = 2 * (eventDistance * 1.05);
     
     [self setEventTimeInMinutes:(handicap + distanceHandicap)];

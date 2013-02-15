@@ -17,10 +17,44 @@
 
 -(IBAction)onCompeteClick:(id)sender
 {
-    swimEvent *newSwimEvent = (swimEvent*)[eventFactory createNewEvent:SWIM];
-    [newSwimEvent setWaterTemp: 70];
     
-    textBox.text = [NSString stringWithFormat:@"Event Time of %.2f Minutes", [newSwimEvent calculateEventTime]];
+    if (swimButton.enabled == FALSE)
+    {
+        swimEvent *newSwimEvent = (swimEvent*)[eventFactory createNewEvent:SWIM];
+        [newSwimEvent setWaterTemp: 70];
+        [newSwimEvent setEventDistance:stepperControl.value];
+        
+        textBox.text = [NSString stringWithFormat:@"Event Time ~ %.4f Minutes", [newSwimEvent calculateEventTime]];
+        
+        swimButton.enabled = TRUE;
+        stepperControl.enabled = FALSE;
+    }
+    else if (bikeButton.enabled == FALSE)
+    {
+        bikeEvent *newBikeEvent = (bikeEvent*)[eventFactory createNewEvent:BIKE];
+        [newBikeEvent setElevationInFeet:2375];
+        [newBikeEvent setEventDistance:stepperControl.value];
+        
+        
+        textBox.text = [NSString stringWithFormat:@"Event Time ~ %.4f Minutes", [newBikeEvent calculateEventTime]];
+        
+        bikeButton.enabled = TRUE;
+        stepperControl.enabled = FALSE;
+    }
+    else
+    {
+        runEvent *newRunEvent = (runEvent*)[eventFactory createNewEvent:RUN];
+        [newRunEvent setTerrainType:PAVEDESTREETS];
+        [newRunEvent setEventDistance:stepperControl.value];
+        
+        
+        textBox.text = [NSString stringWithFormat:@"Event Time ~ %.4f Minutes", [newRunEvent calculateEventTime]];
+        
+        runButton.enabled = TRUE;
+        stepperControl.enabled = FALSE;
+    }
+    
+    competeButton.enabled = FALSE;
 }
 
 
@@ -36,6 +70,7 @@
         runButton.enabled = TRUE;
         bikeButton.enabled = TRUE;
         stepperControl.value = 0;
+        competeButton.enabled = TRUE;
     }
     else if (classButton.tag == 1)
     {
@@ -46,6 +81,7 @@
         runButton.enabled = TRUE;
         swimButton.enabled = TRUE;
         stepperControl.value = 0;
+        competeButton.enabled = TRUE;
         
     }
     else if (classButton.tag == 2)
@@ -57,6 +93,7 @@
         swimButton.enabled = TRUE;
         bikeButton.enabled = TRUE;
         stepperControl.value = 0;
+        competeButton.enabled = TRUE;
         
     }
 }
