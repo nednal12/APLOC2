@@ -14,10 +14,15 @@
 
 @implementation ViewController2
 
+@synthesize delegate;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
+        
+        delegate = nil;
+        
         // Custom initialization
     }
     return self;
@@ -27,6 +32,8 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    eventDatePicker.minimumDate = [NSDate date];
 }
 
 - (void)didReceiveMemoryWarning
@@ -37,6 +44,11 @@
 
 -(IBAction)hideSecondView:(id)sender
 {
+    if (delegate != nil)
+    {
+        [delegate onClose:eventTextField.text pickerDate:eventDatePicker.date];
+    }
+    
     [self dismissViewControllerAnimated:TRUE completion:nil];
 }
 
@@ -44,6 +56,16 @@
 {
     btnHideKeyboard.hidden = FALSE;
     lblHideKeyboard.hidden = FALSE;
+    lblDatePicker.hidden = TRUE;
+    
 }
 
+-(IBAction)hideKeyboard:(id)sender
+{
+    [eventTextField resignFirstResponder];
+    
+    btnHideKeyboard.hidden = TRUE;
+    lblHideKeyboard.hidden = TRUE;
+    lblDatePicker.hidden = FALSE;
+}
 @end

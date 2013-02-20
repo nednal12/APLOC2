@@ -9,9 +9,11 @@
 #import <UIKit/UIKit.h>
 #import "ViewController2.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <viewController2Delegate>
 {
+    IBOutlet UITextView *mainTextView;
     
+    NSDateFormatter *dateFormatter;
 }
 
 -(IBAction)showSecondView:(id)sender;
