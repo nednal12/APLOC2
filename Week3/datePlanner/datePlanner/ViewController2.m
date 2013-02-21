@@ -14,6 +14,7 @@
 
 @implementation ViewController2
 
+// Synthesize delegate in order to allow for it to be accessed outside of this view.
 @synthesize delegate;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -28,6 +29,9 @@
     return self;
 }
 
+
+// Set the minimum date of the date picker to the current date.
+// Any attempt at selecting a date prior to today's date will not be allowed.
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -42,6 +46,9 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+// Call the onClose delegate and send back the text field text and the date picker date.
+// Dismiss secondView.
 -(IBAction)hideSecondView:(id)sender
 {
     if (delegate != nil)
@@ -52,6 +59,10 @@
     [self dismissViewControllerAnimated:TRUE completion:nil];
 }
 
+
+// iOS automatically triggers the keyboard once the user clicks inside the text field.
+// Show the hide keyboard button and label.
+// Hide the date picker label.
 -(IBAction)onTextEnter:(id)sender
 {
     btnHideKeyboard.hidden = FALSE;
@@ -60,6 +71,10 @@
     
 }
 
+
+// Force close the keyboard by calling the resignFirstResponder method on the event text field.
+// Hide the keboard button and label.
+// Show the date picker label.
 -(IBAction)hideKeyboard:(id)sender
 {
     [eventTextField resignFirstResponder];

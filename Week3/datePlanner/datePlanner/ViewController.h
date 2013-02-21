@@ -13,7 +13,7 @@
 {
     IBOutlet UITextView *mainTextView;
     
-    NSDateFormatter *dateFormatter;
+    
 }
 
 -(IBAction)showSecondView:(id)sender;
