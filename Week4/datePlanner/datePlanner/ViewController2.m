@@ -17,6 +17,16 @@
 // Synthesize delegate in order to allow for it to be accessed outside of this view.
 @synthesize delegate;
 
+-(void)viewWillAppear:(BOOL)animated
+{
+    leftSwiper = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(onSwipe:)];
+    leftSwiper.direction = UISwipeGestureRecognizerDirectionLeft;
+    [swipeLabel addGestureRecognizer:leftSwiper];
+    
+    [super viewWillAppear:animated];
+}
+
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -49,7 +59,7 @@
 
 // Call the onClose delegate and send back the text field text and the date picker date.
 // Dismiss secondView.
--(IBAction)hideSecondView:(id)sender
+-(void)onSwipe:(UISwipeGestureRecognizer*)recognizer
 {
     if (delegate != nil)
     {

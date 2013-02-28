@@ -12,11 +12,13 @@
 @interface ViewController : UIViewController <viewController2Delegate>
 {
     IBOutlet UITextView *mainTextView;
+    IBOutlet UILabel *swipeLabel;
+    IBOutlet UIButton *saveButton;
     
-    
+    UISwipeGestureRecognizer *rightSwiper;
 }
 
--(IBAction)showSecondView:(id)sender;
+-(IBAction)onSave:(id)sender;
 
 
 @end

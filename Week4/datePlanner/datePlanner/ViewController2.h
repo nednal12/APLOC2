@@ -23,12 +23,13 @@
     IBOutlet UILabel *lblDatePicker;
     IBOutlet UITextField *eventTextField;
     IBOutlet UIDatePicker *eventDatePicker;
+    IBOutlet UILabel *swipeLabel;
     
     id<viewController2Delegate> delegate;
     
+    UISwipeGestureRecognizer *leftSwiper;
+    
 }
-
--(IBAction)hideSecondView:(id)sender;
 
 -(IBAction)onTextEnter:(id)sender;
 
